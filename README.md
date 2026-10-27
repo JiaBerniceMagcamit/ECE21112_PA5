@@ -17,8 +17,8 @@ This laboratory activity demonstrates foundational MATLAB operations, focusing o
 ### Problem A: Transpose Operations
 
 #### Matrices Defined:
-- **Real Matrix $R$ ($3 \times 4$):** $R = \begin{bmatrix} 5 & -2 & 0 & 7 \\ 1 & 3 & -4 & 2 \\ 6 & 0 & 8 & -1 \end{bmatrix}$
-- **Complex Matrix $Z$ ($2 \times 3$):** $Z = \begin{bmatrix} 2+3i & -1+4i & 5-2i \\ -3+i & 6 & 2+5i \end{bmatrix}$
+- **Real Matrix $R$ ($3 \times 4$):** R [5 -2 0 7; 1 3 -4 2; 6 0 8 -1]
+- **Complex Matrix $Z$ ($2 \times 3$):** Z = [2+3i -1+4i 5-2i; -3+i 6 2+5i]
 
 #### Operations Compared:
 1. `transpose(A)` — Standard transpose
@@ -54,7 +54,7 @@ x_1 + 4x_2 - 2x_3 + x_4 &= -7 \\
 #### Numerical Precision Verification:
 - **Determinant Check:** $\det(A) = -112 \neq 0$ (verifies $A$ is non-singular and solvable).
 - **Solution Verification:** Both methods yield the identical solution vector:
- $x = \begin{bmatrix} 1 \\ -2 \\ 3 \\ 1.5 \end{bmatrix}$
+  x = [1 ; -2;  3; 1.5]
 - **Norm Checks:**
   - `norm(x_inv - x_cramer)` $\approx 0$ (demonstrates equivalence between the inverse method and Cramer's Rule).
   - `norm(A*x_inv - b)` $\approx 0$ (confirms $A x = b$ holds true to numerical precision).
