@@ -54,7 +54,7 @@ x_1 + 4x_2 - 2x_3 + x_4 &= -7 \\
 #### Numerical Precision Verification:
 - **Determinant Check:** $\det(A) = -112 \neq 0$ (verifies $A$ is non-singular and solvable).
 - **Solution Verification:** Both methods yield the identical solution vector:
-  x = [1 ; -2;  3; 1.5]
+  x = [2 ; -1;  3; 1]
 - **Norm Checks:**
   - `norm(x_inv - x_cramer)` $\approx 0$ (demonstrates equivalence between the inverse method and Cramer's Rule).
   - `norm(A*x_inv - b)` $\approx 0$ (confirms $A x = b$ holds true to numerical precision).
